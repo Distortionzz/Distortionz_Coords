@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Share+Tech+Mono&display=swap');
+
+:root {
+    --red: #e11d2a;
+    --bg-top: rgba(20, 21, 25, 0.92);
+    --bg-bot: rgba(11, 12, 15, 0.92);
+    --text: #f4f4f6;
+    --muted: #9aa0a6;
+    --green: #2ecc71;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    /* Display-only overlay — never capture mouse/keyboard. */
+    pointer-events: none;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+.hidden { display: none !important; }
+
+#panel {
+    position: absolute;
+    top: 40vh;
+    left: 1.6vw;
+    min-width: 320px;
+
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bot) 100%);
+    border: 1px solid rgba(225, 29, 42, 0.55);
+    border-left: 3px solid var(--red);
+    border-radius: 12px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.55);
+    padding: 14px 18px;
+    color: var(--text);
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+#panel.flash {
+    border-color: var(--green);
+    box-shadow: 0 0 22px rgba(46, 204, 113, 0.55);
+}
+
+.hdr {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.brand {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--red);
+}
+.title {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.ver {
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(225, 29, 42, 0.4);
+    border-radius: 5px;
+    padding: 1px 7px;
+}
+
+.xyz {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    color: var(--text);
+}
+.vec {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--red);
+    margin: 6px 0 8px;
+    text-shadow: 0 0 10px rgba(225, 29, 42, 0.45);
+}
+.ent {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.hint {
+    margin-top: 10px;
+    padding-top: 9px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.hint b {
+    color: var(--text);
+    background: rgba(225, 29, 42, 0.16);
+    border: 1px solid rgba(225, 29, 42, 0.4);
+    border-radius: 4px;
+    padding: 1px 6px;
+}

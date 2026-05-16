@@ -1,0 +1,6 @@
+{
+    "version": "1.1.4",
+    "name": "distortionz_coords",
+    "download": "https://github.com/Distortionzz/Distortionz_Coords",
+    "changelog": "v1.1.4 — CHANGED: when the laser hits an entity it now reports THAT object's coords + heading (GetEntityCoords/GetEntityHeading), not the surface impact point. World surfaces still report the hit point + player heading. The laser line/marker still sit on the aim point for visual feedback; the readout/copy resolve to the object. v1.1.3 — F7 keybind toggle. v1.1.2 — panel lower. v1.1.1 — update-stream visibility fix. v1.1.0 — premium NUI + version tag. v1.0.1 — GetEntityModel crash fix. v1.0.0 — initial laser tool."
+}
